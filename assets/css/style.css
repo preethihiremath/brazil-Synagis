@@ -21,7 +21,7 @@ body {
   text-decoration: none;
 }
 .address p,a ,address{
-  font-size: 12px;
+  font-size: 8px;
 }
 .nav-link {
   background-color: #0067ac ;
@@ -41,6 +41,7 @@ body {
 
 main {
   box-shadow: 6px 2px 8px rgb(97, 96, 96);
+  overflow-x: hidden;
 }
 
 .paragraph .email{
@@ -183,6 +184,7 @@ a:hover{
   font-size: 14px;
   font-family: 'Roboto', sans-serif;
 }
+
 .footer-img {
 width: 80px;
 height: 40px;
@@ -202,7 +204,7 @@ height: 40px;
 ::placeholder {
   color: white;
 }
-@media screen and (min-width: 667px){
+@media screen and (min-width: 669px){
   nav {
     max-height: 2.5rem;
     
@@ -237,10 +239,31 @@ height: 40px;
   }
 
      .footer{
-         padding: 2rem 5rem !important;
+         padding: 2rem 8rem !important;
      }
 }
-@media screen and (min-width:667px)and (max-width: 1062px){
+@media screen and (min-width:669px)and (max-width: 770px){
+
+  .nav {
+    width: 100%;
+    align-items: center;
+    top: 2px;
+    background-color: none;
+  }
+  nav img {
+      max-height: 2.56rem;
+  }
+  .nav-link {
+    font-size: 14px;
+    padding: 10px;
+  }
+  .medicines h5{
+    text-align: center;
+  }
+  
+}
+
+@media screen and (min-width:770px)and (max-width: 1062px){
 
   .nav {
     width: 100%;
@@ -262,14 +285,10 @@ height: 40px;
 }
 
   
-@media screen and (max-width: 667px){
+@media screen and (max-width: 669px){
   body {
     max-width: 100vh;
-  }
-main{
-    box-shadow: none;
-  }
- 
+  } 
   .nav-pills .nav-link {
     border-radius: 0rem;
   }
@@ -294,15 +313,15 @@ main{
   }
  
   .footer-img {
-      width: 60px;
+      width: 100px;
       height: 40px;
       }
   .footer-img2 {
-      width: 70px;
+      width: 100px;
       height: 40px;
       }
   .details p, .address p{
-      font-size: 10px !important;
+      font-size: 8px !important;
   }
   .header-div-text {
       margin-top: 14px;
@@ -333,6 +352,7 @@ main{
     align-self: center;
     text-align: center;
   }
+
 }
 .color-purple {
   color: #860052;

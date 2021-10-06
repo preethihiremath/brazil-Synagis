@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Brazil SYNAGIS</title>
+        <!-- Google Fonts - Start -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+        <!-- Google Fonts - End -->
+        <!-- Vendor CSS Files - Start -->
+        <link href="assets/css/aos.css" rel="stylesheet" />
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Vendor CSS Files - End -->
+        <!-- Template Main CSS File - Start -->
+        <link href="assets/css/style.css" rel="stylesheet" />
+        <!-- Template Main CSS File - End -->
+    </head>
+    <body>
+        <!-- Header - Start -->
+        <header class="header d-flex flex-column flex-md-row text-center justify-content-between p-2 pt-3 p-sm-4">
+            <div class="header-div d-flex flex-row justify-content-between">
+                <div class="header-div d-flex flex-row justify-content-between">
+                    <img src="./assets/img/logo1.png" class="img-fluid header-logo" />
+                    <div class=" d-flex flex-column text-start">
+                        <h6 class="p-0 m-0 color-blue fw-bolder">SYNAGIS <sup class="superscript">&#174;</sup></h6>
+                        <p class="p-0 m-0 color-blue">PALIVIZUMABE</p>
+                    </div>
+                </div>
+                <img src="./assets/img/logo2.png" class="d-block d-md-none img-fluid header-logo" />
+            </div>
+            <h4 class="header-div-text color-darkblue fw-bold ">
+                Guia de Aplicação de Doses (5 doses por sazonalidade) 
+            </h4>
+            <div>
+                <img src="./assets/img/logo2.png" class=" d-none d-md-block img-fluid w-50" />
+            </div>
+        </header>
+        <!-- Header - End -->
+        <!-- Main Content - Start -->
+        <main class="main">
+            <!-- Nav Tabs - Start -->
+            <nav class="row">
+                <ul class="nav nav-pills nav-fill mb-3 mx-4 flex-column flex-md-row " id="pills-tab" role="tablist">
+                    <img src="./assets/img/left1.png" />
+                    <li class="nav-item b-darkblue" role="presentation" data-region="Centro-Oeste" id="region-1">
+                        <button class="nav-link active color fw-bold" id="pills-centro-tab" data-bs-toggle="pill" data-bs-target="#pills-centro" type="button" role="tab" aria-controls="pills-centro" aria-selected="true">Região Centro-Oeste </button>
+                    </li>
+                    <li class="nav-item b-darkblue" role="presentation" data-region="Nordeste" id="region-2">
+                        <button class="nav-link fw-bold" id="pills-nordeste-tab" data-bs-toggle="pill" data-bs-target="" type="button" role="tab" aria-controls="pills-nordeste" aria-selected="false">Região Nordeste </button>
+                    </li>
+                    <li class="nav-item b-darkblue" role="presentation" data-region="Norte" id="region-3">
+                        <button class="nav-link fw-bold" id="pills-norte-tab" data-bs-toggle="pill" data-bs-target="" type="button" role="tab" aria-controls="pills-norte" aria-selected="false">Região Norte</button>
+                    </li>
+                    <li class="nav-item b-darkblue" role="presentation" data-region="Sudeste" id="region-4">
+                        <button class="nav-link fw-bold" id="pills-suseste-tab" data-bs-toggle="pill" data-bs-target="" type="button" role="tab" aria-controls="pills-suseste" aria-selected="false">Região Sudeste</button>
+                    </li>
+                    <li class="nav-item b-darkblue" role="presentation" data-region="Sul" id="region-5">
+                        <button class="nav-link fw-bold" id="pills-sul-tab" data-bs-toggle="pill" data-bs-target="" type="button" role="tab" aria-controls="pills-sul" aria-selected="false">Região Sul</button>
+                    </li>
+                    <img src="./assets/img/right2.png" />
+                </ul>
+            </nav>
+            <!-- Nav Tabs - End -->
+            <div class="container px-3 tab-content" id="pills-tabContent">
+                <div class="tab-pane show active" style="background-color:white" id="pills-centro" role="tabpanel" aria-labelledby="pills-centro-tab">
+                    <section class="d-flex flex-column flex-md-row justify-content-center text-center mt-4 align-items-center">
+                        <h6 class="color-darkblue fw-bold pt-1">Mês de Nascimento</h6>
+                        <button disabled="disabled" class="mx-4 btn-darkblue d-flex flex-row align-items-center fw-bold">
+                            <a href="#" id="prev-month"> <i class="fw-bold fs-4 p-2 bi bi-chevron-double-left"></i></a>
+                            <span id="month-container">Fevereiro</span>
+                            <a href="#" id="next-month"> <i class=" fw-bold fs-4 p-2 bi bi-chevron-double-right"></i></a>
+                        </button>
+                    </section>
+                    <section class="elements mx-0 mt-3 d-flex px-0 flex-column justify-content-center">
+                       
+                        <div class="container-fluid p-0 mx-0 mt-3">
+                            <div class="medicines row p-1">
+                                <div class="blue-left p-1"></div>
+                                <div class="col-12 col-md-6 d-flex align-items-center justify-content-center justify-content-md-start">
+                                    <h5 class="fw-bold">
+                                        Prematuro,Cardiopata ou Broncodisplastico
+                                        <br/>- 1<sup class="superscript">a</sup>
+                                        SAZONALIDADE - Aplicar 5 doses entre:
+                                    </h5>
+                                </div>
+                                <div class="  col-12 col-md-6 d-flex align-items-center">
+                                    <input readonly type="text" class="btn-blue text-center" placeholder="Fevereriro-Julho" id="output-row__1" />
+                                </div>
+                                <div class="blue-right p-1"></div>
+                            </div>
+                        </div>
+
+                        <div class="container-fluid p-0 mx-0 mt-3">
+                            <div class="medicines row p-1">
+                                <div class="pink-left p-1"></div>
+                                <div class="col-12 col-md-6 d-flex align-items-center justify-content-center justify-content-md-start">
+                                    <h5 class="fw-bold">
+                                        Prematuro -
+                                        2<sup class="superscript">a</sup>
+                                        SAZONALIDADE <br/>
+                                        - (até completar 1 ano) - Aplicar as doses entre:
+                                    </h5>
+                                    </div>
+                                    <div class="col-12 col-md-6 d-flex align-items-center">
+                                        <input readonly type="text" class="btn-blue b-pink text-center" placeholder="Fevereriro" id="output-row__2" />
+                                    </div>
+                                    <div class="pink-right p-1"></div>
+                                </div>
+                            </div>
+                            <div class="container-fluid p-0 mx-0 mt-3">
+                                <div class="medicines row p-1">
+                                    <div class="darkblue-left p-1"></div>
+                                    <div class="col-12 col-md-6 d-flex align-items-center justify-content-center justify-content-md-start">
+                                        <h5 class="fw-bold">
+                                            Em casos de Cardiopatia ou Broncodisplasia<br />
+                                            - 2<sup class="superscript">a</sup>
+                                            SAZONALIDADE - Aplicar as doses entre:
+                                        </h5>
+                                    </div>
+                                    <div class="col-12 col-md-6 d-flex align-items-center">
+                                        <input readonly type="text" class="btn-blue b-darkblue text-center" placeholder="Fevereriro-Julho" id="output-row__3" />
+                                    </div>
+                                    <div class="darkblue-right p-1"></div>
+                                </div>
+                            </div>
+                            <div class="container-fluid p-0 mx-0 mt-3">
+                                <div class="medicines row p-1">
+                                    <div class="gray-left p-1"></div>
+                                    <div class="para col-12 col-md-6 d-flex align-items-center justify-content-center  justify-content-md-start">
+                                        <h5 class="fw-bold">
+                                            Em casos de Cardiopatia ou Broncodisplasia<br />
+                                            - 3<sup class="superscript">a</sup>
+                                            SAZONALIDADE - (até completar 2 anos)<br />
+                                            - Aplicar as doses:
+                                        </h5>
+                                    </div>
+                                    <div class="col-12 col-md-6 d-flex align-items-center">
+                                        <input readonly type="text" class="btn-blue b-gray text-center" placeholder="Fevereriro" id="output-row__4" />
+                                    </div>
+                                    <div class="gray-right p-1"></div>
+                                </div>
+                            </div>
+                    </section>
+                    <section class="paragraph m-0 p-0 mt-5" style="text-align:justify">
+                        <p class="p-0 m-0">
+                            <span class="fw-bold">SYNAGIS<sup class="superscript">&#174;</sup></span>
+                            (palivizumabe) solução injetável via intramuscular.
+                            <span class="fw-bold">Indicações:</span>
+                            SYNAGIS<sup class="superscript">&#174;</sup>
+                            (palivizumabe) é destinado à prevenção de doença grave do trato respiratório inferior causada pelo vírus sincicial respiratório (VSR)
+                            em pacientes pediátricos com alto risco para doença por VSR. A segurança e eficácia foram
+                            estabelecidas em crianças prematuras (com menos de 35 semanas de idade gestacional),
+                            em crianças portadoras de displasia broncopulmonar sintomática e em portadores de
+                            cardiopatia congênita hemodinamicamente significativa menores de 2 anos de idade.
+                            <span class="fw-bold">Contraindicações:</span>
+                            Não deve ser utilizado em crianças com histórico de reação anterior grave ao palivizumabe ou a qualquer de seus excipientes ou a outros anticorpos monoclonais humanizados.
+                            <span class="fw-bold">Cuidados e Advertências:</span>
+                            <i>Gerais:</i>
+                            reações alérgicas, incluindo muito raramente a anafilaxia e o choque anafilático, foram relatadas
+                            após a administração de palivizumabe. Fatalidades foram relatadas em alguns casos. Se uma reação
+                            grave de hipersensibilidade ocorrer, a terapia com palivizumabe deve ser descontinuada.
+                            Assim como outros agentes administrados nesta população, se uma reação de hipersensibilidade
+                            moderada ocorrer, deve-se ter cautela na readministração de palivizumabe. Como com qualquer
+                            injeção intramuscular, o palivizumabe deve ser administrado com cuidado a pacientes com
+                            trombocitopenia ou qualquer distúrbio de coagulação.<i>Idosos:</i> palivizumabe
+                            não é indicado para uso em idosos. <i>Gravidez:</i> o palivizumabe não é indicado para uso adulto e não
+                            foram conduzidos estudos de reprodução animal. Também não se sabe se o palivizumabe pode causar
+                            dano ao feto quando administrado a mulheres grávidas ou se pode comprometer a capacidade
+                            reprodutiva.
+                            <span class="fw-bold">Categoria de risco C Interações medicamentosas:</span>
+                            O palivizumabe pode interferir com testes imunológicos de diagnóstico de VSR, como alguns exames baseados na detecção de
+                            antígenos. Além disso, palivizumabe inibe a replicação viral em cultura celular e, portanto,
+                            também pode interferir nos testes de cultura viral. O palivizumabe não interfere em
+                            ensaios de reação em cadeia da polimerase via transcriptase reversa (RT-PCR).
+                            A interferência nestes ensaios poderia levar a um resultado falso-negativo em testes de diagnóstico de VSR. Portanto, os resultados de testes de diagnóstico, quando obtidos,
+                            devem ser utilizados em conjunto com achados clínicos para guiar decisões médicas..
+                            <span class="fw-bold"> Reações adversas:</span>
+                            <i>Muito comum:</i>
+                            rash, pirexia;
+                            <i>comum:</i>
+                            reação no local da injeção.
+                            <span class="fw-bold"> Posologia:</span>
+                            Deve ser administrado na posologia de 15 mg/kg, uma vez por mês durante
+                            períodos de risco de VSR previstos na comunidade, exclusivamente por via intramuscular
+                            (I.M.), de preferência na face ântero-lateral da coxa. O músculo glúteo não deve ser
+                            utilizado rotineiramente como local de administração devido ao risco de dano ao nervo ciático..
+                            <span class="fw-bold"> Apresentações:</span>
+                            Solução injetável de 100 mg/mL: solução injetável em frasco-ampola para dose única
+                            contendo 0,5 mL ou 1,0 mL de solução.
+                            <span class="fw-bold">USO PEDIÁTRICO. VIA INTRAMUSCULAR. VENDA SOB PRESCRIÇÃO MÉDICA.</span>
+                            Para maiores informações, consulte a bula completa do produto.
+                            <a class="p-0 m-0 email" href="https://www.astrazeneca.com.br/" target="_blank" style="text-decoration:underline;color:#212529">www.astrazeneca.com.br</a>
+                            <span class="fw-bold">Reg. MS - 1.1618.0286 </span>
+                            (SYN001_min).
+                        </p>
+                    </section>
+                    <p class="text-center py-4 ">
+                        Material destinado a profissionais de saúde. BR-14736. Produzido em Setembro/2021.
+                    </p>
+                </div>
+                <div class="tab-pane fade" id="pills-nordeste" role="tabpanel" aria-labelledby="pills-nordeste-tab">...</div>
+                <div class="tab-pane fade" id="pills-norte" role="tabpanel" aria-labelledby="pills-norte-tab">...</div>
+                <div class="tab-pane fade" id="pills-suseste" role="tabpanel" aria-labelledby="pills-suseste-tab">Susteste</div>
+                <div class="tab-pane fade" id="pills-sul" role="tabpanel" aria-labelledby="pills-sul-tab">Sul</div>
+            </div>
+        </main>
+        <!-- Main Content - End -->
+        <!-- Footer - Start -->
+        <footer class=" footer d-flex flex-row justify-content-between align-items-center p-3">
+            <div class="details d-flex flex-column">
+                <img src="./assets/img/sac-icon.png" class="img-fluid footer-img" />
+                <p class="h6 p-0 m-0 color-purple fw-bold">@ASTRAENZA.COM</p>
+                <p class="p-0 m-0 h5 fw-bolder">0800&nbsp;014&nbsp;5578</p>
+            </div>
+            <div class="address d-flex flex-column px-2">
+                <p class="p-0 m-0 h5 fw-bold" style="font-size:18px;font-weight:bold">AstraZeneca do Brasil Ltda.</p>
+                <p class="p-0 m-0 mt-1  ">
+                    Rod.Raposo Tavares km 26,9 06707-000 | Cotia<br />
+                    | São Paulo | Brasil<br />
+                    SAC 0800 &nbsp;014 &nbsp;55&nbsp;78
+                </p>
+                <a class="p-0 m-0 email" href="https://www.astrazeneca.com.br/" style="text-decoration:none;">www.astrazeneca.com.br</a>
+            </div>
+            <div class="details d-flex flex-column">
+                <img src="./assets/img/infomed.png" class="img-fluid footer-img2" />
+                <p class="h6 p-0 m-0 color-purple fw-bold">@ASTRAENZA.COM</p>
+                <p class="p-0 m-0 h5 fw-bolder">0800&nbsp;014&nbsp;5578</p>
+            </div>
+        </footer>
+        <!-- Footer - End -->
+        <!-- Vendor JS Files - Start -->
+        <script src="assets/js/jquery-3.6.0.min.js"></script>
+        <script src="assets/js/aos.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <!-- Vendor JS Files - End -->
+        <!-- Custom JS Files - Start -->
+        <script src="assets/js/excelData.js" type="text/javascript"></script>
+        <script src="assets/js/script.js" type="text/javascript"></script>
+        <!-- Custom JS Files - End -->
+    </body>
+</html>
